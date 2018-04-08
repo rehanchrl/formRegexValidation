@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validasi</title>
+</head>
+<body>
+    <form id="form">
+	<div>
+		<label for="username">Username</label>
+        <input name="username" type="text" placeholder="Username" pattern="^[a-z]*$" title="username hanya boleh menggunakan huruf kecil" id="username">
+        <br>
+        <label for="email">Email</label>
+        <input name="email" type="email" placeholder="email" pattern="^[a-z\@]*$" title="email menggunakan format email dan hanya boleh huruf kecil" id="email">
+        <br>
+        <label for="phone">Phone Number</label>
+		<input name="phone" type="text" placeholder="phone" pattern="^[0-9\s\+]*$" title="nomor telpon hanya boleh berisi angka,'+'dan spasi" id="phone">
+	</div>
+</form>
+</body>
+</html>
